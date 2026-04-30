@@ -95,7 +95,7 @@ questions = [f["pertanyaan"] for f in faq_data]
 answers = [f["jawaban"] for f in faq_data]
 
 #vectorizer = TfidfVectorizer()
-faq_vectors = vectorizer.fit_transform(questions)
+#faq_vectors = vectorizer.fit_transform(questions)
 
 def chatbot(user_input):
     user_vec = vectorizer.transform([user_input])
